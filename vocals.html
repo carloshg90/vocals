@@ -8,6 +8,7 @@
 	<script>
 		var cadena = prompt("Introdueix una cadena de text:");
 		var contador = 0;
+		car contadorO = 0;
 		var vocals = ['a', 'e','i','o','u'];
 
 		for (var i = 0; i < cadena.length ; i++){
@@ -17,9 +18,13 @@
 					contador++;
 					}
 				}
+				if (cadena.charAt(i) == 'o'){
+					contadorO++;
+				}
 			}
 
 			alert ("Hi ha "+contador+" vocals.");
+			alert ("Hi ha "+contadorO+" vocals o.");
 	</script>	
 </body>
 </html>
