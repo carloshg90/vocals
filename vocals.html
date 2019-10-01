@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vocals</title>
+</head>
+<body>
+	<script>
+		var cadena = prompt("Introdueix una cadena de text:");
+		var contador = 0;
+		var vocals = ['a', 'e','i','o','u'];
+
+		for (var i = 0; i < cadena.length ; i++){
+			for (var j = 0; j < vocals.length ; j++){
+
+				if (cadena.charAt(i) == vocals[j]){
+					contador++;
+					}
+				}
+			}
+
+			alert ("Hi ha "+contador+" vocals.");
+	</script>	
+</body>
+</html>
